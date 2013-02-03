@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.description = %q{Force loading all data from the controller by raising when the database is accessed from the view. This can help create effective database queries and help avoid SQL N+1 problems.}
 
   s.require_paths = ["lib"]
+  s.files         = Dir.glob("lib/**/*") + %w(README.md)
 
   s.add_development_dependency "rspec"
   s.add_runtime_dependency "rails", '>= 3.1.1'
